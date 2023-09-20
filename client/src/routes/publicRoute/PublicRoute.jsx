@@ -10,22 +10,22 @@ export const publicRoute = [
     element: <Layout />,
     children: [
       {
-        path: "https://developer-saddam.onrender.com/",
+        path: "/",
         element: <Home />,
       },
 
       {
-        path: "https://developer-saddam.onrender.com/contact",
+        path: "/contact",
         element: <Contact />,
       },
 
       {
-        path: "https://developer-saddam.onrender.com/about",
+        path: "/about",
         element: <About />,
       },
 
       {
-        path: "https://developer-saddam.onrender.com/portfolio",
+        path: "/portfolio",
         element: <Portfolio />,
       },
     ],
