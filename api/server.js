@@ -4,7 +4,7 @@ import colors from "colors";
 import cors from "cors";
 import mailSendRoute from "./routes/mailSendRoute.js";
 import { errorHandler } from "./utils/customErrorHandler.js";
-const BaseUrl = "http://localhost:3000";
+const BaseUrl = "https://developer-saddam.onrender.com";
 
 // Init Express.
 const app = express();
