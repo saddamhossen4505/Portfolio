@@ -4,6 +4,7 @@ import colors from "colors";
 import cors from "cors";
 import mailSendRoute from "./routes/mailSendRoute.js";
 import { errorHandler } from "./utils/customErrorHandler.js";
+const BaseUrl = "http://localhost:3000";
 
 // Init Express.
 const app = express();
@@ -17,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: `${BaseUrl}`,
     credentials: true,
   })
 );

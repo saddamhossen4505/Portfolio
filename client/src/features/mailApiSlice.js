@@ -5,7 +5,7 @@ import axios from "axios";
 export const sendMail = createAsyncThunk("mail/sendMail", async (data) => {
   try {
     const response = await axios.post(
-      `http://localhost:5050/api/v1/mail_send`,
+      `https://portfolio-api-cilh.onrender.com/api/v1/mail_send`,
       data,
       {
         withCredentials: true,
